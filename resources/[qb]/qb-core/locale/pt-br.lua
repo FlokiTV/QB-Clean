@@ -1,17 +1,17 @@
 local Translations = {
     error = {
-        not_online = 'jogador não online',
+        not_online = 'O jogador não está online',
         wrong_format = 'Formato incorreto',
         missing_args = 'Nem todos os argumentos foram inseridos (x, y, z)',
         missing_args2 = 'Todos os argumentos devem ser preenchidos!',
         no_access = 'Sem acesso a este comando',
         company_too_poor = 'Seu patrão está quebrado',
         item_not_exist = 'Item não existe',
-        too_heavy = 'Inventário muito cheio',
+        too_heavy = 'Inventário cheio',
         location_not_exist = 'A localização não existe',
         duplicate_license = 'Encontrada licença duplicada da Rockstar',
         no_valid_license  = 'Nenhuma licença Rockstar válida encontrada',
-        not_whitelisted = 'Você não está na lista de permissões para este servidor',
+        not_whitelisted = 'Você não possui Whitelist nesse servidor',
         server_already_open = 'O servidor já está aberto',
         server_already_closed = 'O servidor já está fechado',
         no_permission = 'Você não tem permissões para isso!',
@@ -21,25 +21,25 @@ local Translations = {
         connecting_database_timeout = 'A conexão com o banco de dados expirou. (O servidor SQL está ligado?)',
     },
     success = {
-        server_opened = 'O servidor foi aberto',
-        server_closed = 'O servidor foi fechado',
+        server_opened = 'O servidor abriu',
+        server_closed = 'O servidor fechou',
         teleported_waypoint = 'Teletransportado para o ponto de referência.',
     },
     info = {
         received_paycheck = 'Você recebeu seu salário de $%{value}',
         job_info = 'Emprego: %{value} | Grau: %{value2} | Deveres: %{value3}',
         gang_info = 'Gangue: %{value} | Grau: %{value2}',
-        on_duty = 'Você agora está de plantão!',
-        off_duty = 'Você agora está de folga!',
+        on_duty = 'Você está agora em um serviço!',
+        off_duty = 'Você está fora do serviço!',
         checking_ban = 'Olá %s. Estamos verificando se você foi banido.',
         join_server = 'Bem-vindo %s para {Server Name}.',
-        checking_whitelisted = 'Olá %s. estamos verificando seu conta bancaria.',
+        checking_whitelisted = 'Olá %s. estamos verificando seu Whitelist.',
         exploit_banned = 'Você foi banido por trapacear. Confira nosso Discord para mais informações: %{discord}',
-        exploit_dropped = 'Você foi kikado por Exploração',
+        exploit_dropped = 'Você foi kikado por tentar trapacear',
     },
     command = {
         tp = {
-            help = 'TP Para Jogador ou Coordenadas (Somente Administrador)',
+            help = 'TP para jogador ou Coordenadas (Somente Administrador)',
             params = {
                 x = { name = 'id/x', help = 'ID do jogador ou posição X'},
                 y = { name = 'y', help = 'Y posição'},
@@ -47,7 +47,7 @@ local Translations = {
             },
         },
         tpm = { help = 'TP para marcador (Somente Administrador)' },
-        togglepvp = { help = 'Alternar PVP no servidor (Somente Administrador)' },
+        togglepvp = { help = 'Ligar / Desligar PvP no servidor (Somente Administrador)' },
         addpermission = {
             help = 'Dar permissões ao jogador (Somente deus)',
             params = {
@@ -62,25 +62,25 @@ local Translations = {
                 permission = { name = 'permissão', help = 'nível de permissão' },
             },
         },
-        openserver = { help = 'Abra o servidor para todos (Somente Administrador)' },
+        openserver = { help = 'Abrir o servidor para todos (Somente Administrador)' },
         closeserver = {
-            help = 'Fechar o servidor para todos sem permissão (Somente Administrador)',
+            help = 'Fechar o servidor para todos exceto Admins (Somente Administrador)',
             params = {
                 reason = { name = 'razão', help = 'Motivo do fechamento (opcional)' },
             },
         },
         car = {
-            help = 'Spawnar Veículo (somente administrador)',
+            help = 'Spawnar Veículo (Somente Administrador)',
             params = {
                 model = { name = 'modelo', help = 'Nome do modelo do veículo' },
             },
         },
         dv = { help = 'Excluir veículo (Somente Administrador)' },
         givemoney = {
-            help = 'Dê dinheiro a um jogador (Somente Administrador)',
+            help = 'Dar dinheiro a um jogador (Somente Administrador)',
             params = {
                 id = { name = 'id', help = 'Jogador ID' },
-                moneytype = { name = 'tipo de dinheiro', help = 'Tipo de dinheiro (dinheiro fisico, banco, cripto)' },
+                moneytype = { name = 'tipo de dinheiro', help = 'Tipo de dinheiro (dinheiro, banco, cripto)' },
                 amount = { name = 'quantidade', help = 'Quantia de dinheiro' },
             },
         },
