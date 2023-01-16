@@ -1,5 +1,6 @@
 alpine*
 cache*
+server.cfg
 
 .git/*
 .github/*
