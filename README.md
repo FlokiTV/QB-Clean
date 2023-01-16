@@ -1,1 +1,2 @@
-# linux-fivem-downloader
+# QBClean
+## QBCore, but clean 🍃
