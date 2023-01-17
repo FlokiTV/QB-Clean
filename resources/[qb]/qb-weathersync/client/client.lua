@@ -53,7 +53,7 @@ CreateThread(function()
             end
             Wait(100) -- Wait 0 seconds to prevent crashing.
             SetArtificialLightsState(blackout)
-            -- SetArtificialLightsStateAffectsVehicles(blackoutVehicle)
+            --SetArtificialLightsStateAffectsVehicles(blackoutVehicle)
             ClearOverrideWeather()
             ClearWeatherTypePersist()
             SetWeatherTypePersist(lastWeather)
